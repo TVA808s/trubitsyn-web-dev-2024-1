@@ -45,6 +45,8 @@ section>div>div{
     filter:drop-shadow(17px 19px 24px rgba(0,0,0,0.13));
     background-color:white;
     justify-content: space-between;
+
+    width:360px;
     
 }
 
@@ -95,6 +97,9 @@ section>div>div>button{
     padding:10px 30px;
     border-radius: 10px;
     cursor:pointer;
+    
+    align-self: center;
+    width: 100%;
 }
 
 nav{
