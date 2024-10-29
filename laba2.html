@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <title>YamBits</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="chicken.svg">
+            <link rel="stylesheet" href = "laba2.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Ribeye+Marrow&family=Unlock&display=swap" rel="stylesheet">
+            <script src="massive.js"></script>
+            <script src="order.js"></script>
+        </head>
+    <body>
+        <header>
+            <div>
+                <h1>Your favourite chicken space😄</h1>
+            </div>
+
+            <nav class="menu">
+                <a href="laba1.html">About us</a>
+                <a href="" class="active">Make an order</a>
+                <a href="">Perchases</a>
+                <a href="#info">Contacts</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <section>
+                    <h2>Tender chicken</h2>
+                    <div id="chicken" class="dishes">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Snacks and french fries</h2>
+                    <div id="snacks" class="dishes">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Take a drink</h2>
+                    <div id ="drinks" class="dishes">
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class ="ordertable">
+            <div class="makeanorder">
+                <h2>Make an order</h2>
+            </div>
+
+            <form method="POST" action="https://httpbin.org/post">
+                <div class="ordersettings" >
+                    <h3 id="order">Your order</h3>
+                    <p id = "nothing">Nothing is on the list</p>
+
+                    <div id = "selectedDishes">
+                        <p><b>Chicken</b><br><span id="noChicken">-empty-</span></p>
+                        <input type="hidden" name="chicken" id="hiddenChicken">
+
+                        <p><b>Snack</b><br><span id="noSnacks">-empty-</span></p>
+                        <input type="hidden" name="snacks" id="hiddenSnacks">
+
+                        <p><b>Drink</b><br><span id="noDrinks">-empty-</span></p>
+                        <input type="hidden" name="drinks" id="hiddenDrinks">
+
+                        <p><b>Order cost</b><br><span id="total"></span></p>
+                    </div>
+
+                    <label for="comment">Give us a comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="orderinfo">
+                    <h3>Your info</h3>
+
+                    <label for="name">Name</label>
+                    <input type="text" name="user_name" id="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="user_email" id="email" required>
+
+                    <label for="checkbox"><input type="checkbox" name="user_agree" id="checkbox" checked> Agree for mailing?</label>
+                    
+                    <label for="telnum">Number</label>
+                    <input type="tel" name="user_num" id="telnum" required>
+
+                    <label for="address">Address</label>
+                    <input type="text" name="user_address" id="address" required>
+
+                    <fieldset>
+                        <legend>Order time:</legend>
+                        <label for="rightnow" >Right now</label>
+                        <input type="radio" name="user_speed" id="rightnow" required>
+
+                        <label for="intime">In time</label>
+                        <input type="radio" name="user_speed" id="intime" required>
+                    </fieldset>
+
+                    <label for="time">Time</label>
+                    <input type="time" name="user_time" id="time" max="23:00" min="7:00" step="5min">
+                    
+                    <button id="reset" type="reset">Reset</button>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <footer id="info">
+            <div>
+                <p>Call us +4882422000</p>
+                <p>Made by Trubitsyn Vyacheslav</p>
+            </div>
+        </footer>
+    </body>
+</html>
