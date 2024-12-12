@@ -1,0 +1,72 @@
+@import "siteBaziz.css";
+
+@media (min-width: 801px){
+    nav{justify-content: center;}
+    section>div{
+    grid-template-columns: repeat(3,1fr); 
+    }
+}
+@media (max-width: 800px){
+    section>div{
+        grid-template-columns: repeat(2,1fr);}
+    nav{
+        justify-content: space-between;
+    
+    }
+}
+
+@media (max-width: 600px){
+    h1{text-align: center;}
+    nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: calc(1em + 4px);
+    }
+    section>h2{text-align: center;}
+    section>div{grid-template-columns: repeat(1,1fr);}
+}
+
+nav{
+    font-size: 24px;
+}
+
+
+.makeanorder{text-align: center; margin-top: 60px;}
+
+#id_select1,#id_select2,#id_select3,#name,#email,#telnum,#address,#time,section>div>div>button{
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+}
+
+label,fieldset, section>div>div>button{margin-top: 12px; margin-bottom: 5px;}
+
+#comment{border: 1px solid black; width: 280px; font-size: 16px;}
+
+fieldset{border: none;}
+
+
+
+form{display: flex; justify-content: space-around;}
+
+.ordersettings, .orderinfo{ display: flex; flex-direction: column;}
+.orderinfo > button{
+    margin-top:5px;
+    border: 1px solid black;
+    background: white;
+    color: black;
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+}
+#total{
+    font-size: 26px;
+}
+
+
+.hidden{
+    display: none;
+}

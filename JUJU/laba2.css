@@ -1,0 +1,112 @@
+@import "siteBaziz.css";
+
+@media (min-width: 801px){
+    section>div{
+        grid-template-columns: repeat(3,1fr);}
+
+    }
+
+@media (max-width: 800px){
+    section>div{
+        grid-template-columns: repeat(2,1fr);}
+    nav{
+        justify-content: space-between;
+    
+    }
+}
+    
+@media (max-width: 600px){
+    h1{text-align: center;}
+    nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: calc(1em + 4px);
+    }
+    section>h2{text-align: center;}
+    section>div{grid-template-columns: repeat(1,1fr);}
+}
+
+
+section>div{
+    display:grid;
+    grid-gap: 10px;
+}
+
+
+section>div>div{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    border-radius: 35px;
+    border:2px solid transparent;
+    cursor:pointer;
+    filter:drop-shadow(17px 19px 24px rgba(0,0,0,0.13));
+    background-color:white;
+    justify-content: space-between;
+    
+}
+
+section>div>div:hover{
+    border:2px solid tomato;
+    transition:0.7s;
+}
+
+section>div>div:hover > button{
+    background-color: rgb(196, 196, 196);
+    transition: 0.7s;
+}
+
+section>div>div>img{
+    border-radius: 35px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+img{
+    height:250px;
+}
+
+.cost{
+    font-size: 1.15em;
+    color:black;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.name{
+    font-size:1.05em;
+    color:black;
+    margin-bottom: 0px;
+    margin-top:5px
+}
+
+.gramms{
+    color:rgb(136, 136, 136);
+    font-size:18px;
+
+}
+
+section>div>div>button{
+    background-color: #f1eee9;
+    margin-top:10px;
+    padding:10px 30px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+nav{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a.active{
+    color:tomato;
+}
+
+main{flex-grow: 1;}
+
+
