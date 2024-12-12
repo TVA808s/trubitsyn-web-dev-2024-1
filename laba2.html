@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <title>YamBits</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="/images/chicken.svg">
+            <link rel="stylesheet" href = "laba2.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Ribeye+Marrow&family=Unlock&display=swap" rel="stylesheet">
+            <script src="massive.js"></script>
+            <script src="order.js"></script>
+        </head>
+    <body>
+        <header>
+            <div>
+                <h1>Your favourite chicken space😄</h1>
+            </div>
+
+            <nav class="menu">
+                <a href="laba1.html">About us</a>
+                <a href="" class="active">Make an order</a>
+                <a href="perchases.html">Perchases</a>
+                <a href="#info">Contacts</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="lunches">
+                <h2><b>Try this combos!</b></h2>
+                <div class="grid">
+                    <div class="combo">
+                        <div class="combo_item">
+                            <img src="/images/burger.png">
+                            <p>burger</p> 
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/tenders.png">
+                            <p>tenders</p> 
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/salad.png">
+                            <p>salad</p>
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/drink.png">
+                            <p>drink</p>
+                        </div>
+                    </div>
+
+                    <div class="combo">
+                        <div class="combo_item">
+                            <img src="/images/burger.png">
+                            <p>burger</p> 
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/tenders.png">
+                            <p>tenders</p> 
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/drink.png">
+                            <p>drink</p>
+                        </div>
+                    </div>
+
+                    <div class="combo">
+                        <div class="combo_item">
+                            <img src="/images/burger.png">
+                            <p>burger</p> 
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/salad.png">
+                            <p>salad</p>
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/drink.png">
+                            <p>drink</p>
+                        </div>
+                    </div>
+
+                    <div class="combo">
+                        <div class="combo_item">
+                            <img src="/images/tenders.png">
+                            <p>tenders</p> 
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/salad.png">
+                            <p>salad</p>
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/drink.png">
+                            <p>drink</p>
+                        </div>
+                    </div>
+
+                    <div class="combo">
+                        <div class="combo_item">
+                            <img src="/images/tenders.png">
+                            <p>tenders</p> 
+                        </div>
+                        <div class="combo_item">
+                            <img src="/images/drink.png">
+                            <p>drink</p>
+                        </div>
+                    </div>
+
+                    <div class="combo">
+                        <div class="combo_item desert">
+                            <img src="/images/desert.png">
+                            <p>desert</p>
+                            <i class="PS">(add to any order)</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                
+                <section>
+                    <h2>Tender chicken</h2>
+                    <div id="first" class="buttons"><button data-kind="juicy">Juicy</button> <button data-kind="meat">Meat!</button> <button data-kind="basket">Baskets</button></div>
+                    <div id="chicken" class="dishes">
+                    </div>
+                </section>
+                
+
+                <section>
+                    <h2>Burgers</h2>
+                    <div id="second" class="buttons"><button data-kind="medium">Medium</button> <button data-kind="big">Large</button> <button data-kind="light">Light</button></div>
+                    <div id="burgers" class="dishes">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Snacks and french fries</h2>
+                    <div id="third" class="buttons"><button data-kind="veg">Vegeterian</button> <button data-kind="chicken">Chicken</button> <button data-kind="shrimps">Shrimps</button></div>
+                    <div id="snacks" class="dishes">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Take a drink</h2>
+                    <div id="forth" class="buttons"><button data-kind="cold">Cold</button> <button data-kind="hot">Hot</button></div>
+                    <div id ="drinks" class="dishes">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Deserts</h2>
+                    <div id="fifth" class="buttons"><button data-kind="withadrink">With a drink</button> <button data-kind="icecream">Icecream</button> <button data-kind="healthy">Healthy</button></div>
+                    <div id="deserts" class="dishes">
+                    </div>
+                </section>
+            </div>
+        </main>
+        <h3 id="try"></h3>
+        <footer id="info">
+            <div>
+                <p>Call us +4882422000</p>
+                <p>Made by Trubitsyn Vyacheslav</p>
+            </div>
+        </footer>
+    </body>
+</html>
