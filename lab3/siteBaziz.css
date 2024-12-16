@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:22px;
+    font-weight: 500;
+    color:white;
+    background-color: rgba(121,160,193,0.9);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    
+}
+
+header{
+    background-color: rgb(245, 151, 80);
+    color: white;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Unlock", serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 80%;
+    margin:0 auto;
+    font-family: "Exo 2", sans-serif;
+}
+
+footer{
+    
+    background-color: black;
+    color: white;
+    font: 1.2rem;
+    font-weight: 400;
+    padding:5px 0;
+    margin-top:40px;
+    text-align: center;
+    font-family: "Unlock", serif;
+
+}
+
+.menu{
+    background-color:rgb(190, 130, 60);
+    padding:10px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-family: "Unlock", serif;
+    font-size:500;
+    transition: color 0.5s;
+}
+
+a:hover{
+    color:rgb(140,200,150);
+}
+
+a.active{
+    color:tomato;
+}
