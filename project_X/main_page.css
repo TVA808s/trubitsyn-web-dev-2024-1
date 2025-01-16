@@ -1,0 +1,187 @@
+@import "base.css";
+
+@media only screen and (max-device-width:450px){    
+    #search{
+        margin: 0px;
+        width: 100%;  
+    }
+    main{
+        flex-direction: column;
+    }
+    #sidebar{
+        width: 100%;
+        height: 170px;
+    }
+    #filter_name{
+        display: none;
+    }
+    #filter_form{
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+    .filter_section{
+        max-width: 50%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    #catalog_top{
+        justify-content: space-around;
+        margin: 15px;
+    }
+    .left{
+        margin-right: 10px;
+    }
+    #priceFrom, #priceTo{
+        outline: none;
+        max-width: 150px;
+    }
+    #apply_button{
+        height: 35px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+}
+@media (width > 450px){
+    #search_form{
+        margin: 0px 25px;
+        width: 100%;
+    }
+    #search_form_button{
+        margin-right: 60px;
+    }
+    #search{
+        margin-right: 25px;
+        flex-grow: 1;
+        margin-left: 60px;  
+    }
+    #catalog_top{
+        margin: 25px 50px;
+    }
+    #catalog_top select{
+        width: 250px;
+    }
+    #sidebar{
+        min-height: 80vh;
+        width: 250px;
+    }
+    #filter_form{
+        position: sticky;
+        top: 25px;
+    }
+    .filter_section {
+        margin: 25px 0px 0px 15px;
+    }
+    #priceFrom, #priceTo{
+        width:100px;
+        outline: none;
+    }
+    #apply_button{
+        width: 85%;
+        margin: 15px 0px 0px 15px;
+    }
+}
+
+#search_form{
+    display: flex;
+}
+
+#search{
+    display: flex;
+    
+    position: relative;
+}
+#search_bar{
+    padding: 12px;
+    border: 1px solid #ccc;     
+    font-size: 1em;
+    flex-grow: 1;
+    height: 55px;
+}
+#search_bar:focus{
+    outline: none;
+}
+#search_offers{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 0.9em;
+    top:55px;
+    width: 100%;
+}
+#search_offers>p{
+    text-decoration: underline;
+    padding: 5px 15px 10px 15px;
+}
+#search_offers>p:hover{
+    cursor: pointer;
+    color:#666666;
+    background-color: #e6ffd7;
+}
+#search_form_button {
+    padding: 12px 12px;
+    background-color: #4caf50; 
+    color: white;             
+    border: none;             
+    border-radius: 5px;
+    cursor: pointer;          
+    width: 100px;
+    
+}
+#main_page_form_button:hover {
+    background-color: #409445;  
+}
+
+#sidebar{
+    background-color: #b7db9e;
+    color:#3a3a3a;
+}
+
+#apply_button{
+    color: white;
+    background-color: #4caf50;
+    
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer; 
+}
+#apply_button:hover {
+    background-color: #409445;  
+}
+
+#catalog{
+    width: 100%;
+}
+#catalog_top{
+    display: flex;
+    flex-direction: row;
+    
+}
+#catalog_top h2{
+    flex-grow: 1;
+}
+#catalog_top select{
+    border: solid 1px;
+    padding: 5px;
+    height: 35px;
+    outline: none;
+}
+.card button{
+    background-color: #4caf50;
+}
+.card button:hover {
+    background-color: #409445;  
+}
+.card:hover{
+    border: #4caf50 solid 2px;
+}
+
+#NoProducts{
+    margin: 25px 50px;
+}

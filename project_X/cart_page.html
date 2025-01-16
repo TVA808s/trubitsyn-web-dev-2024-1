@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <title>DistantBuyer</title>
+            <link rel="icon" href="images/shop_icon.webp">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Ribeye+Marrow&family=Unlock&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href = "cart_page.css">
+            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+            <script src="cart_page.js"></script>
+        </head>
+        <body>
+            <header>
+                <h1>
+                    <p>DistantBuyer.com</p>
+                </h1>
+                <div id="icons_block">
+                    <a class="icon_block" href="user_page.html">
+                        <img class="icon" src="images/user_icon.webp" alt="кабинет">
+                    </a>
+                    <a class="icon_block" href="main_page.html">
+                        <img class="icon" src="images/main_icon.png" alt="главная">
+                    </a>
+                </div>
+            </header>
+
+            <div id="notifications" class="hidden">
+                <p id="notifications_status">Новых сообщений нет</p>
+                <button id="notifications_close_button"></button>
+            </div>
+
+            <main>
+                <div id="cart">
+                    <div id="cart_top">
+                        <h2>
+                            <p>Корзина</p>
+                        </h2>
+                    </div>
+                    <div id="cart_empty">
+                        <h3>
+                            <p>Корзина пуста. Перейдите в каталог, чтобы добавить товары.</p>
+                        </h3>
+                    </div>
+
+                    <div id="cards_block">
+                        
+                    </div>
+                </div>
+                <div id="order_form">
+                    <div id="form_top">
+                        <h2>
+                            <p>Оформление заказа</p>
+                        </h2>
+                    </div>
+                    <form id="form">
+                        <div class="form_side">
+                            <p>Имя</p>
+                            <input id="name" type="text" name="full_name" placeholder="Иванов Иван" required>
+                            <p>Номер телефона</p>
+                            <input id="telephone" type="tel" name="phone" placeholder="+74952230523" required>
+                            <p>Email</p>
+                            <input id="email" type="email" name="email" placeholder="example@mospolytech.ru" required>
+                            <p>Подписаться на рассылку <input id="subscribe" type="checkbox" name="subscribe"></p>
+                            <p>Коментарий</p>
+                            <textarea id="comment"></textarea>
+                        </div>
+                        <div class="form_side">
+                            <p>Адрес доставки</p>
+                            <input id="address" type="text" name="address" placeholder="ул. Большая Семеновская, 38" required>
+                            <p>Дата доставки</p>
+                            <input id="date" type="date" name="date" onchange="day(),period()" required>
+                            <p>Временной интервал доставки</p>
+                            <select id="time" onchange="period(),day()" required>
+                                <option value="">Выберите время доставки</option>
+                                <option value="08:00-12:00">08:00-12:00</option>
+                                <option value="12:00-14:00">12:00-14:00</option>
+                                <option value="14:00-18:00">14:00-18:00</option>
+                                <option value="18:00-22:00">18:00-22:00</option>
+                            </select>
+                        
+                            <div id="total">
+                                <h3>
+                                    <p id="total_cost">Итоговая стоимость: 0₽</p>
+                                </h3>
+                                <p id="dilivery_cost">(стоимость доставки: 200₽)</p>
+                            </div>
+                            
+                            <div id="buttons">
+                                <button id="redo" type="reset">Сбросить</button>
+                                <button id="done" type="submit">Оформить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            
+            <footer>
+                <div id="footer_info">
+                    <p>
+                        <b>DistantBuyer.com</b>
+                    </p>
+                    <p>CEO<br>Трубицын Вячеслав Александрович</p>
+                </div>
+                <div id="footer_contacts">
+                    <p>
+                        <b>Контакты</b>
+                    </p>
+                    <a class="icon_block" href="tg://resolve?domain=lov3rbo9">
+                        <img class="icon" src="images/tg_icon.png">
+                    </a>
+                    <a class="icon_block" href="mailto:trubslava@gmail.com">
+                        <img class="icon" src="images/mail_icon.png">
+                    </a>
+                </div>
+                <div id="footer_pages">
+                    <a href="main_page.html">
+                        <p>‣ Главная</p>
+                    </a>
+                    <a href="cart_page.html">
+                        <p>‣ Корзина</p>
+                    </a>
+                    <a href="user_page.html">
+                        <p>‣ Кабинет</p>
+                    </a>
+                </div>
+            </footer>
+        </body>
+    </html>

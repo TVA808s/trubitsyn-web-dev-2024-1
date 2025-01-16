@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <title>DistantBuyer</title>
+            <link rel="icon" href="images/shop_icon.webp">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Ribeye+Marrow&family=Unlock&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href = "main_page.css">
+            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+            <script src="main_page.js"></script>
+        </head>
+        <body>
+            <header>
+                <h1>
+                    <p>DistantBuyer.com</p>
+                </h1>
+                <form id="search_form">
+                    <div id="search">
+                        <input type="search" id="search_bar" name="search" placeholder="Искать" autocomplete="off">
+                        <div id="search_offers" class="hidden"></div>
+                    </div>
+                    <button id="search_form_button" type="submit">
+                        <b>Найти</b>
+                    </button>
+                </form>
+                <div id="icons_block">
+                    <a class="icon_block" href="user_page.html">
+                        <img class="icon" src="images/user_icon.webp" alt="кабинет">
+                    </a>
+                    <a class="icon_block" href="cart_page.html">
+                        <img class="icon" src="images/cart_icon.png" alt="корзина">
+                    </a>
+                </div>
+            </header>
+            <div id="notifications" class="hidden">
+                <p id="notifications_status">Новых сообщений нет</p>
+                <button id="notifications_close_button"></button>
+            </div>
+            <main>
+                <aside id="sidebar">
+                    <form id="filter_form">
+                        <div class="filter_section" id="filter_name">
+                            <h2>
+                                <p>Фильтры</p>
+                            </h2>
+                        </div>
+                        <div class="filter_section left">
+                            <h3>
+                                <p>Категории</p>
+                            </h3>
+                            <div id="checkboxes_block">
+                                <label>
+                                    <p>Дом и кухня <input id="home & kitchen" type="checkbox" name="category" value="home & kitchen"></p>
+                                </label>
+                                <label>
+                                    <p>Тв, аудио и камеры <input id="tv, audio & cameras" type="checkbox" name="category" value="tv, audio & cameras"></p>
+                                </label>
+                                <label>
+                                    <p>Спортивные товары <input id="sports & fitness" type="checkbox" name="category" value="sports & fitness"></p>
+                                </label>
+                                 <label>
+                                    <p>Красота, здоровье <input id="beauty & health" type="checkbox" name="category" value="beauty & health"></p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter_section right">
+                            <h3>
+                                <p>Цена</p>
+                            </h3>
+                            <div class="price_range">
+                                <label for="priceFrom">От:</label>
+                                <input type="number" id="priceFrom" name="priceFrom" placeholder="100"><br>
+                                <label for="priceTo">До:</label>
+                                <input type="number" id="priceTo" name="priceTo" placeholder="20000">
+                            </div>
+                            <label>
+                                Только товары со скидкой <input id="discount" type="checkbox" name="discount" value="discount"> 
+                            </label>
+                        </div>
+                        <button type="submit" id="apply_button">Принять</button>
+                    </form>
+                </aside>
+                <div id="catalog">
+                    <div id="catalog_top">
+                        <h2>
+                            <p>Каталог</p>
+                        </h2>
+                        <select id="sort">
+                            <option value="rate_down">По убыванию рейтинга</option>
+                            <option value="cost_up">По возростанию цены</option>
+                            <option value="rate_up">По возростанию рейтинга</option>
+                            <option value="cost_down">По убыванию цены</option>
+                        </select>
+                    </div>
+                    <div id="cards_block">
+                
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div id="footer_info">
+                    <p>
+                        <b>DistantBuyer.com</b>
+                    </p>
+                    <p>CEO<br>Трубицын Вячеслав Александрович</p>
+                </div>
+                <div id="footer_contacts">
+                    <p>
+                        <b>Контакты</b>
+                    </p>
+                    <a class="icon_block" href="tg://resolve?domain=lov3rbo9">
+                        <img class="icon" src="images/tg_icon.png">
+                    </a>
+                    <a class="icon_block" href="mailto:trubslava@gmail.com">
+                        <img class="icon" src="images/mail_icon.png">
+                    </a>
+                </div>
+                <div id="footer_pages">
+                    <a href="main_page.html">
+                        <p>‣ Главная</p>
+                    </a>
+                    <a href="cart_page.html">
+                        <p>‣ Корзина</p>
+                    </a>
+                    <a href="user_page.html">
+                        <p>‣ Кабинет</p>
+                    </a>
+                </div>
+            </footer>
+        </body>
+    </html>
