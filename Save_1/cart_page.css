@@ -1,0 +1,129 @@
+@import "base.css";
+
+@media only screen and (max-device-width:450px){  
+    .form_side{
+        width: 150px;
+    }
+    #redo, #done{
+        min-width: 125px;
+        height: 40px;
+    }
+    form{
+        width: 80%;
+        flex-direction: column;
+        justify-self: center;
+        margin-bottom: 25px;
+    }
+    form input, form textarea, form select{
+        height: 30px;
+    }
+    #subscribe{
+        height: 20px;
+    }
+    .form_side{
+        width: 100%;
+    }
+    .form_side *{
+        margin: 5px;
+        font-size: 15px;
+    }
+    #cart{
+        justify-items: center;
+    }
+    #cart_top{
+        margin: 10px 0px;
+    }
+    #form_top{
+        justify-items: center;
+        margin: 5px 0px;
+    }
+    #cart_empty{
+        padding: 0px 20px;
+    }
+    #cards_block{
+        width: 100%;
+    }
+}
+
+@media (width > 450px){
+    #cart>div{
+        margin: 25px 0px 25px 50px;
+    }
+    #order_form{
+        margin: 0px 50px;
+    }
+    .form_side{
+        width: 350px;
+    }
+    #redo, #done{
+        min-width: 150px;
+        height: 40px;
+    }
+    form{
+        justify-content: space-around;
+    }
+    .form_side *{
+        margin: 5px;
+        font-size: 18px;
+    }
+    .form_side{
+        margin: 25px 0px;
+    }
+}
+
+main{
+    flex-direction: column;
+}
+.card:hover{
+    border: #788879 solid 2px;
+}
+.card button{
+    background-color: #b0b658;
+}
+.card button:hover {
+    background-color: #7f813a;  
+}
+
+form{
+    display: flex; 
+}
+.form_side{
+    display: flex;
+    flex-direction: column;   
+}
+#total{
+    display: block;
+    justify-items: center;
+    margin-top: 20px;
+}
+#total_cost{
+    font-weight: bold;
+    font-size: 22px;
+}
+#dilivery_cost{
+    font-size: 16px;
+}
+#buttons{
+    display: flex;
+    justify-content: space-between;
+}
+form input, form textarea, form select{
+    padding: 5px;
+}
+#redo, #done{
+    padding: 5px;
+    color: white;
+    background-color: rgb(151, 151, 151);
+    border: black solid 2px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#redo:hover{
+    border: rgb(223, 0, 0) solid 2px;
+    background-color: #cf6f57;
+}
+#done:hover{
+    border:#55e65a solid 2px;
+    background-color: #48a34b;
+}

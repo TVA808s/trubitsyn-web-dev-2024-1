@@ -1,0 +1,186 @@
+@import "base.css";
+
+@media only screen and (max-device-width:450px){    
+    main>div{
+        margin: 15px;
+    }
+    th{
+        height: 60px;
+    }
+    table, tbody, th, tr{
+        width:100%;
+        display:block;
+        align-content: center;
+    }
+    #order_settings{
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    thead{
+        display: none;
+    }
+    .overflow_mobile{
+        overflow-y: scroll;
+    }
+    .overflow_mobile::-webkit-scrollbar {
+        width: 5px;
+        background-color: rgb(182, 182, 182);
+    }
+    #delete_modal{
+        margin:-100px 0 0 -175px;
+    }
+    #look_modal{
+        margin:-300px 0 0 -175px;
+    }
+    #change_modal{
+        margin:-300px 0 0 -175px;
+    }
+    .modal_window{
+        width: 350px;
+    }
+    .modal_body_text_side input, .modal_body_text_side textarea, .modal_body_text_side select{
+        height: 33px;
+        outline: none;
+        padding: 5px;
+        width: 160px;
+    }
+    form{
+        width: 175px;
+    }
+    .width160{
+        max-width: 160px;
+    }
+}
+
+@media (width > 450px){
+    main>div{
+        margin: 25px 0px 25px 50px;
+    }
+    table {
+        width: 80%;
+    }
+    #delete_modal{
+        margin:-200px 0 0 -300px;
+    }
+    #look_modal{
+        margin:-300px 0 0 -300px;
+    }
+    #change_modal{
+        margin:-300px 0 0 -300px;
+    }
+    .modal_window{
+        width: 600px;
+        font-size: 18px;
+    }
+    .modal_body{
+        padding: 20px 20px 50px 0px;
+    }
+    .modal_body_text_side input, .modal_body_text_side textarea, .modal_body_text_side select{
+        height: 33px;
+        outline: none;
+        padding: 5px;
+    }
+}
+
+main{
+    flex-direction: column;
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+tr{
+    border: 2px solid black;
+}
+th{
+    padding: 10px;
+}
+#order_settings{
+    display: flex;
+    flex-direction: row;
+}
+.settings_icon_block{
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+}
+.table_icon{
+    cursor: pointer;
+    border-radius: 5px;
+}
+.table_icon:hover{
+    background-color: rgb(199, 199, 199);
+}
+.modal_window{
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    padding: 10px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    background-color: white;
+}
+.modal_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.close_button{
+    background-color: transparent;
+    display: block;
+    max-width: 16px;
+    width: 16px;
+    max-height: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 2px;
+    scale: 1.8;
+    cursor: pointer;
+}
+.close_button::after{
+    content: "\00d7";
+}
+.close_button:hover{
+    background-color: rgb(238, 238, 238);
+}
+.modal_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.modal_body_text_side{
+    width: 250px;
+}
+.modal_body_text_side *{
+    margin: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.overflow{
+    overflow-y: scroll;
+}
+.overflow::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(182, 182, 182);
+}
+.modal_footer{
+    display: flex;
+    width: 70%;
+    align-self: center;
+    justify-content: space-around;
+}
+.btn{
+    border: black solid 2px;
+    border-radius: 2px;
+    padding: 5px 10px;
+    width: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(216, 216, 216);
+}
